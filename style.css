@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap');
+
+:root {
+    --text2: #C3007D;
+    --bg-header: #00313E;    
+    --bg-color: #171522;
+    --text1: #00DADA;
+    --fs-30: 1.875rem;
+    --fs-20: 1.25rem;    
+    --fs-88: 5.5rem;
+    --fstyle: "Chakra Petch";    
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+
+::-webkit-scrollbar-track {
+    background-color: var(--bg-header);
+    box-shadow: inset  0 0 5px var(--text2); 
+    border-radius: 30px;
+  }
+   
+
+::-webkit-scrollbar-thumb {
+    background: var(--text1);  
+    border-radius: 10px; 
+  }
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text2)  ;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+/*-*-*-*-*-*-*-*-*-*-*- HEADER -*-*-*-*-*-*-*-*-*-*-*/
+
+header {
+    margin: 0;
+    width: 100%;
+    height: 88px;
+    display: flex;
+    padding: 1vw;
+    justify-content: space-between;
+    background-color: var(--bg-header);
+    z-index: 1000;     
+}
+
+.sticky-header {
+    top: 0;
+    position: sticky;
+}
+
+/*-*-*-*-*-*-*-*-*-*-*-* HOME LOGO -*-*-*-*-*-*-*-*-*-*-*/
+
+.home-logo {
+    position: sticky;
+    display: flex;
+    align-items: center;
+}
+
+.name-logo-banner { 
+    margin-left: 60px;
+    
+}
+
+.name-logo {    
+    font-family: var(--fstyle);
+    font-size: var(--fs-30);
+    font-style: normal;    
+    line-height: 30px;
+    letter-spacing: 2.30px;
+    display: flex;
+    align-items: center;    
+    text-shadow: -5px 5px 7px var(--bg-color);    
+}
+
+/*-*-*-*-*-*-*-*-*-*-*- NAVIGATION MENU -*-*-*-*-*-*-*-*-*-*-*/
+
+.navbar {    
+    display: flex;
+    align-items: center;
+}
+
+.navmenu {
+    display: flex;
+    list-style-type: none;
+    width: 40vw;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.navmenu > li > a {
+    display: block;
+    font-family: var(--fstyle);
+    font-size: var(--fs-20);
+    text-decoration: none;
+    color: var(--text1);
+    text-shadow: -5px 5px 7px var(--bg-color);    
+}
+
+.navmenu > li > a:hover{
+    transform: scale(1.2);   
+    color: var(--text2);
+    text-decoration: underline;
+    cursor: pointer;  
+}
+
+.navmenu > li > a:active {
+    color: var(--text2);
+    text-decoration: none;
+}
+
+/*-*-*-*-*-*-*-*-*-*-*- DOWNLOAD CV -*-*-*-*-*-*-*-*-*-*-*/
+
+.download-cv {
+    width: 240px;
+    height: 50px;
+    box-sizing: border-box;
+    background-color: var(--text2);
+    border: 3px solid var(--text1);
+    border-radius: 45px;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;   
+}
+
+.download-cv:hover {
+    transform: scale(1.2);
+    cursor: pointer;  
+}
+
+.download-cv > a {  
+    text-decoration: none;
+    color: var(--text1);
+    font-family: var(--fstyle);
+    text-transform: uppercase;
+    padding-left: 55px;   
+}
+
+/*-*-*-*-*-*-*-*-*-*-*- BODY -*-*-*-*-*-*-*-*-*-*-*/
+
+body {
+    margin: 0;
+    background-color: var(--bg-color); 
+}
+
+/*-*-*-*-*-*-*-*-*-*-*- HOME PAGE -*-*-*-*-*-*-*-*-*-*-*/
+
+main {    
+    margin-top: 200px;
+}
+
+.home-banner {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.home-banner > img {
+    border: 10px groove  var(--text1);
+    border-radius: 45px;
+    box-shadow: 30px 20px 30px  var(--text2);
+}
+.banner {
+    font-family: var(--fstyle);
+    color: var(--text1);    
+    text-transform: uppercase;
+}
+
+.banner > h1 {
+    font-size: var(--fs-88);
+    line-height: 80px;
+    letter-spacing: 3px;    
+}
+
+.banner > p {
+    width: 620px;
+    height: 180px;
+    font-size: var(--fs-20);
+    line-height: 30px;
+    letter-spacing: 2px;
+}
+
+ .scroll-text {
+    display: flex;
+    justify-content: flex-start;    
+    height: fit-content;
+    align-items: center;
+    margin-top: 20vh;
+ }
+
+ .scroll-text  >p {
+    text-transform: uppercase;
+    font-family: var(--fstyle);
+    color: var(--text1);
+    letter-spacing: 2px;
+    margin-right: 1vw;
+ }
+
+ .scroll-text > .line-bar {    
+    width: 25vw;
+    height: 2px;
+    background-color: var(--text2);
+ }
+
+ /*-*-*-*-*-*-*-*-*-*-*- MY SKILLS PAGE -*-*-*-*-*-*-*-*-*-*-*/
+
+#skills { 
+    box-sizing: border-box;
+    height: 850px;
+    margin-bottom: 10vh;
+}
+
+#skills > div > h1{
+    color: var(--text2);
+    letter-spacing: 2px;
+    font-family: var(--fstyle);
+    font-size: var(--fs-88);
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 10vh;
+}
+
+.container-skills {    
+    box-sizing: border-box;
+    width: 100%;    
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+}
+
+.skills-logo {
+    width: 200px;
+    height: 200px;
+    background-color: var(--bg-header);
+    box-sizing: border-box;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px; 
+}
+
+.skills-logo:hover {
+    transform: scale(1.5);
+}
+
+.skills-logo > h3 {
+    font-family: var(--fstyle);
+    color: var(--text1);
+    text-transform: uppercase;
+}
+
+/*-*-*-*-*-*-*-*-*-*-*- MY PROJECTS PAGE -*-*-*-*-*-*-*-*-*-*-*/
+
+#projects > div >h1 {
+    color: var(--text2);
+    letter-spacing: 2px;
+    font-family: var(--fstyle);
+    font-size: var(--fs-88);
+    text-transform: uppercase;
+    padding-left: 10vh;
+}
+
+.project-card-container {
+    display: flex;
+    justify-content: space-around;    
+    flex-wrap: wrap;
+    margin-right: 10vw;
+    margin-left: 5vw;
+    gap: 30px;    
+}
+
+.project-card {   
+    width: 600px;
+    height: 500px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--bg-header);
+    border-radius: 10px;  
+}
+
+.project-card:hover {
+    outline: 5px solid var(--text2);
+    transform: scale(1.1);
+}
+
+.project-display {
+    width: 540px;
+    height: auto;
+    margin-top: 20px;
+}
+
+
+.project-img {
+    position: relative;
+    border: 5px solid var(--text1);
+    border-radius: 5px; 
+}
+
+.project-display > span{
+    position: absolute;   
+}
+
+.tech-used-container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end; 
+    width: 550px;
+    height: 50px;  
+}
+
+.tech-used {
+    position: inherit;
+    display: flex;
+    align-items: center; 
+    background-color: var(--bg-header-o);  
+}
+
+.tech-used-logo {    
+    margin:0;
+    width: 40px;
+    height: 40px;    
+}
+
+.project-name > h3 {
+    font-family: var(--fstyle);
+    color: var(--text1);
+    text-transform: uppercase;    
+}
+
+/*-*-*-*-*-*-*-*-*-*-*- CONTACT INFO PAGE -*-*-*-*-*-*-*-*-*-*-*/
+
+footer {
+    width: 100%;
+    height: auto;
+    margin-top: 10vh;
+    margin-bottom: 50px;   
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;   
+}
+
+/*-*-*-*-*-*-*-*-*-*-*- SOCIAL MEDIA -*-*-*-*-*-*-*-*-*-*-*/
+
+.social-contact-container {
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.social-media-container {
+    width: 20vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.social-media-container > a {
+    padding: 1vh;    
+    text-decoration: none;
+    color: var(--text1);
+}
+
+.social-media-container > a > i {
+    margin-right: 3vw;
+}
+
+.social-media-container > a:hover {
+    color: var(--text2);
+    transform: scale(1.2);
+}
+
+.social-media, 
+.contact-info,
+.send-message > p{
+    font-family: var(--fstyle);
+    font-size: var(--fs-30);
+    color: var(--text2);
+}
+
+/*-*-*-*-*-*-*-*-*-*-*- CONTACT INFO -*-*-*-*-*-*-*-*-*-*-*/
+
+.contact-info {
+    margin: 0;
+}
+.contact{
+    color: var(--text1);    
+    font-family: var(--fstyle);
+    list-style-type: none;
+    letter-spacing: 2px;
+    margin: 5px;
+}
+
+.contact > a{
+    color: var(--text1);
+    text-decoration: none;
+    font-size: var(--fs-20);
+}
+
+.contact > a:hover {
+    color: var(--text2);
+    text-decoration: underline;
+}
+
+/*-*-*-*-*-*-*-*-*-*-*- SEND MESSAGE -*-*-*-*-*-*-*-*-*-*-*/
+
+.send-message {
+    display: flex;
+    margin: 0;
+    flex-flow: column;
+    align-content: center;    
+}
+
+.contact-me-container {
+    width: 300px;
+    height: 300px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;    
+}
+
+label {
+    color: var(--text1);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: var(--fstyle);
+    font-size: var(--fs-20);
+}
+
+.form-control,.form-control-msg {
+    display: block;
+    width: 300px;
+    font-size: var(--fs-20);
+    font-family: var(--fstyle);
+    background-color: var(--bg-header);
+    color: var(--text1);
+    background-clip: padding-box;
+    padding: 0.375rem 0.75rem;
+    border: 1px solid var(--text2);    
+}
+
+.form-floating-name, 
+.form-floating-email, 
+.area-floating-message {
+    display: flex;
+    flex-flow: column;
+}
+
+.btn > button {
+    width: 220px;
+    height: 50px;
+    box-sizing: border-box;
+    background-color: var(--text2);
+    border: 3px solid var(--text1);
+    border-radius: 45px;
+    font-family: var(--fstyle);
+    color: var(--text1);
+    text-transform: uppercase;
+}
