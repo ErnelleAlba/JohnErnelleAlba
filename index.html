@@ -1,410 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>John Ernelle Alba</title>
-        <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
-    </head>
-
-    <body>
-        <div id="home"></div>
-
-        <header class="sticky-header" 
-                id="header">
-
-            <div class="home-logo">
-                <div class="name-logo-banner">
-                    
-                    <div class="name-logo" 
-                        style="color: var(--text1);">
-                        Ernelle
-                    </div>
-
-                    <div class="name-logo" 
-                        style="color: var(--text2);">
-                        Alba
-                    </div>  
-
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Ernelle | Web Developer</title>
+</head>
+<body>
+  <div class="container-fluid w-100">
+    <button class="btn d-xl-none position-sticky top-0 start-100" 
+      type="button" 
+      data-bs-toggle="offcanvas" 
+      data-bs-target="#offcanvasScrolling" 
+      aria-controls="offcanvasScrolling">
+      <i class="fa-solid fa-bars fa-2xl mt-4" style="color: #ffffff"></i>
+    </button>
+    <div class="offcanvas offcanvas-end text-light" 
+      data-bs-scroll="true" 
+      tabindex="-1" 
+      id="offcanvasScrolling">
+      <div class="offcanvas-header">
+        <button type="button" 
+          class="btn" 
+          data-bs-dismiss="offcanvas" 
+          aria-label="Close">
+          <i class="fa-solid fa-xmark fa-2xl" style="color: #ffffff"></i>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="d-flex flex-column text-uppercase text-center my-5 gap-4">
+          <a class="page-nav fw-bold" href="#about-me">About Me</a>
+          <a class="page-nav fw-bold" href="#skills">Skills</a>
+          <a class="page-nav fw-bold" href="#projects">Projects</a>
+          <a class="page-nav fw-bold" href="#contact-info">Contact Info</a>
+        </div>      
+      </div>
+    </div>
+    <div class="d-flex flex-row bg-transparent">
+      <div class="col-xl-1 col-auto ms-0 ms-xl-3 me-0 me-xl-1">
+        <div id="navigation" class="list-group position-sticky start-0 gap-4" style="top: 40%;">
+          <a class="list-group-item list-group-item-action ms-1 ms-xl-0 me-1 me-xl-0" 
+            href="#about-me">
+            <span class="d-xl-inline d-none">
+            About Me</span>
+          </a>
+          <a class="list-group-item list-group-item-action ms-1 ms-xl-0 me-1 me-xl-0" 
+            href="#skills">
+            <span class="d-xl-inline d-none">
+            Skills</span>
+          </a>
+          <a class="list-group-item list-group-item-action ms-1 ms-xl-0 me-1 me-xl-0" 
+            href="#projects">
+            <span class="d-xl-inline d-none">
+            Projects</span>
+          </a>
+          <a class="list-group-item list-group-item-action ms-1 ms-xl-0 me-1 me-xl-0" 
+            href="#contact-info">
+            <span class="d-xl-inline d-none">
+            Contact Me</span>
+          </a>
+        </div>
+      </div>
+      <div class="col-2 col-xl-1 right-side">
+        <div class="social-icons d-flex flex-column gap-5">
+          <a href="https://github.com/ErnelleAlba" target="_blank">
+            <i class="fa-brands fa-github fa-xl"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/john-ernelle-alba/" target="_blank">
+            <i class="fa-brands fa-linkedin-in fa-xl"></i>
+          </a>
+          <a href="https://www.facebook.com/ernelle.alba" target="_blank">
+            <i class="fa-brands fa-facebook-f fa-xl"></i>
+          </a>
+        </div>
+        <div class="scroll-text d-flex align-items-center">
+          <span class="line-bar"></span>
+          <h6 class="text-uppercase text-nowrap my-auto ms-3">scroll for more</h6>
+        </div>
+      </div>
+      <div class="col-10 text-light">
+        <div data-bs-spy="scroll" 
+          data-bs-target="#navigation" 
+          data-bs-smooth-scroll="true" 
+          tabindex="0">
+          <div id="about-me" class="d-flex vh-100 flex-column justify-content-center align-items-start">
+            <div class="ms-4 ms-md-5 ps-0 ps-md-3 ps-xl-4 ps-xxl-5">
+              <div class="col-12 col-xxl-8">
+                <h4 class="text-uppercase font-monospace text-pink">
+                  Full-Stack Web Developer
+                </h4>
+                <h1 class="myName my-4"><span class="stroke">
+                  Hi! I'm </span>Ernelle
+                </h1>
+                <p class="about-me-text text-gray col-12 col-md-9">
+                    I’m a full-stack web developer. 
+                    Born in 1996 in Bulacan, Philipines.
+                    I believe web design can be more diverse and inspiring. 
+                    With a mission to present the possibilities of web design, 
+                    I am pursuing new expressions through experiments and thoughts.
+                </p>
+              </div>
+            </div>
+            <div class="ms-4 ms-md-5 ps-0 ps-md-5">
+              <a href="./document/Alba, John Ernelle C. - CV.pdf" target="_blank" class="download-cv fw-bold d-flex">
+                <i class="fa-solid fa-file-arrow-down me-2"></i>
+                Download CV              
+              </a>
+            </div>
+          </div>
+          <div id="skills" class="d-flex align-items-baseline pt-5 mb-5">
+            <div class="ms-4 ms-md-5 ps-0 ps-md-3 ps-xl-4 ps-xxl-5">
+              <h1 class="text-uppercase page-title-skill"><span class="stroke">My</span> Skills</h1>
+              <div class="d-flex justify-content-center flex-wrap w-100">
+                <div class="d-flex flex-wrap justify-content-center mx-0 mx-md-5 px-0 px-md-5">
+                  <h3 class="col-12 text-center text-uppercase mb-5 skill-category text-pink">Frontend</h3>
+                  <div class="col-4 p-3 mb-5 d-flex flex-column align-items-center gap-4 skill-icon">
+                    <i class="fa-brands fa-html5 fa-2xl" style="color: #85808d;"></i>
+                    <h6 class="text-uppercase mt-4">
+                      Html</h6>
+                  </div>
+                  <div class="col-4 p-3 mb-5 d-flex flex-column align-items-center gap-4 skill-icon">
+                    <i class="fa-brands fa-css3-alt fa-2xl" style="color: #85808d;"></i>
+                    <h6 class="text-uppercase mt-4">
+                      Css</h6>
+                  </div>
+                  <div class="col-4 p-3 mb-5 d-flex flex-column align-items-center gap-4 skill-icon">
+                    <i class="fa-brands fa-bootstrap fa-2xl" style="color: #85808d;"></i>
+                    <h6 class="text-uppercase mt-4">
+                      Bootstrap</h6>
+                  </div>
+                  <div class="col-4 p-3 mb-5 d-flex flex-column align-items-center gap-4 skill-icon">
+                    <i class="fa-brands fa-square-js fa-2xl" style="color: #85808d;"></i>
+                    <h6 class="text-uppercase mt-4">
+                      Javascript</h6>
+                  </div>
+                  <div class="col-4 p-3 mb-5 d-flex flex-column align-items-center gap-4 skill-icon">
+                    <i class="fa-brands fa-react fa-2xl" style="color: #85808d;"></i>
+                    <h6 class="text-uppercase mt-4">
+                      React Js</h6>
+                  </div>
                 </div>
-            </div>
-
-    <!-------------------- NAVIGATION MENU -------------------->
-            <div class="navbar">
-                <nav>
-                        <ul class="navmenu">
-                            <li class="navbar-item">
-                                <a href="#home">
-                                    Home
-                                </a>
-                            </li>
-
-                            <li class="navbar-item">
-                                <a href="#skills">
-                                    Skills
-                                </a>
-                            </li>
-
-                            <li class="navbar-item">
-                                <a href="#projects">
-                                    Projects
-                                </a>
-                            </li>
-                        
-                            <li class="navbar-item">
-                                <a href="#contact">
-                                    Contact
-                                </a>
-                            </li>
-                        </ul>
-                </nav>
-            </div>  
-
-    <!-------------------- DOWNLOAD CV -------------------->
-            <div class="download-cv">
-                <a href="#" download="#">                
-                    <i class="fa-solid fa-file-arrow-down"></i>
-                    Download CV               
-                </a>
-            </div>
-
-        </header>
-
-    <!---------------------------------------- HOME ---------------------------------------->
-        <main id="main">
-
-            <div class="home-banner">
-
-                <section>
-                    <div class="banner">
-                        <h1>Hi! I'm <span style="color: var(--text2);">Ernelle</span></h1>
-                        <p>i’m a <span style="color: var(--text2);">full-stack web developer</span>. 
-                            Born in 1996 in Bulacan, Philipines.
-                            I believe web design can be more diverse and inspiring. 
-                            With a mission to present the possibilities of web design, 
-                            I am pursuing new expressions through experiments and thoughts.
-                        </p>
-                    </div>
-
-                    <div class="scroll-text">
-                        <p>scroll for more</p>
-                        <div class="line-bar"></div>
-                    </div>
-                </section>
-
-                <img src="./images/hero-profile.gif" 
-                    alt="Profile-picture">
-
-            </div>
-
-    <!------------------------------ SKILLS ------------------------------>
-
-            <section id="skills">
                 <div>
-                    <h1>My Skills</h1>
+                  <h3 class="col-12 mb-5 text-center text-uppercase skill-category text-pink">Backend</h3>
+                  <div class="d-flex flex-wrap justify-content-between">
+                    <div class="col-4 p-3 mb-3 d-flex flex-column align-items-center gap-4 skill-icon">
+                      <i class="fa-brands fa-laravel fa-2xl" style="color: #85808d;"></i>
+                      <h6 class="text-uppercase mt-4">
+                        Laravel</h6>
+                    </div>
+                    <div class="col-4 p-3 mb-3 d-flex flex-column align-items-center gap-4 skill-icon"> 
+                      <i class="fa-brands fa-php fa-2xl" style="color: #85808d;"></i>
+                      <h6 class="text-uppercase mt-4">
+                        Php</h6>
+                    </div>
+                  </div>
                 </div>
-
-                <div class="container-skills">
-                    <div class="skills-logo">
-                        <img src="./images/html5.png" 
-                            alt="html5-logo" 
-                            style="width: 100px; height: 100px;">
-                        <h3>html5</h3>
-                    </div>
-
-                    <div class="skills-logo">
-                        <img src="./images/css.png" 
-                            alt="css-logo" 
-                            style="width: 100px; height: 100px;">
-                        <h3>css</h3>
-                    </div>
-
-                    <div class="skills-logo">
-                        <img src="./images/bootstrap.png" 
-                            alt="bootstrap-logo" 
-                            style="width: 100px; height: 100px;">
-                        <h3>bootstrap</h3>
-                    </div>
-
-                    <div class="skills-logo">
-                        <img src="./images/javascript.png" 
-                            alt="javascript-logo" 
-                            style="width: 100px; height: 100px;">
-                        <h3>javascript</h3>
-                    </div>
-
-                    <div class="skills-logo">
-                        <img src="./images/nodejs.png" 
-                            alt="node-js-logo" 
-                            style="width: 100px; height: 100px;">
-                        <h3>node.js</h3>
-                    </div>
-
-                    <div class="skills-logo">
-                        <img src="./images/reactjs.png" 
-                            alt="react-js-logo" 
-                            style="width: 100px; height: 100px;">
-                        <h3>react.js</h3>
-                    </div>
-
-                </div>  
-                
-            </section>
-    <!------------------------------- PROJECTS ------------------------------> 
-            <section id="projects">
-                <div>
-                    <h1>My projects</h1>
-                </div>
-
-                <article class="project-card-container">
-                    <article class="project-card">
-
-                        <div class="project-display">
-                            
-                            <img src="./images/design-portfolio.png" 
-                                alt="my-design-portfolio"                            
-                                class="project-img">
-
-                            <span>
-                                <div class="tech-used-container">
-
-                                    <div class="tech-used">
-
-                                        <img src="./images/html5.png" 
-                                            alt="html5-logo" 
-                                            class="tech-used-logo">
-
-                                        <img src="./images/css.png" 
-                                            alt="css-logo" 
-                                            class="tech-used-logo">
-
-                                    </div>
-                                </div>
-                            </span>
-
-                        </div>
-
-                        <div class="project-name">
-                            <h3>My Design Portfolio</h3>
-                        </div>
-
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-display">
-                            
-                            <img src="./images/art-gallery-showcase.png" 
-                                alt="art-gallery-showcase"                            
-                                class="project-img">
-                                
-                            <span>
-                                <div class="tech-used-container">                               
-                                    <div class="tech-used">
-                                        <img src="./images/html5.png" 
-                                            alt="html5-logo" class="tech-used-logo"
-                                            class="tech-used-logo">
-                                        <img src="./images/css.png" 
-                                            alt="css-logo" 
-                                            class="tech-used-logo">
-                                        <img src="./images/javascript.png" 
-                                            alt="javascript-logo"
-                                            class="tech-used-logo">
-                                    </div>
-                                </div>  
-                            </span>
-                        
-                        </div>   
-
-                        <div class="project-name">
-                            <h3>Art Gallery Showcase</h3>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-display">
-
-                            <img src="./images/entertainment.png" 
-                                alt="entertainment-web-app"                            
-                                class="project-img">
-
-                            <span>
-                                <div class="tech-used-container">    
-                                    <div class="tech-used">
-                                        <img src="./images/html5.png" 
-                                            alt="html5-logo" 
-                                            class="tech-used-logo">
-                                        <img src="./images/css.png" 
-                                            alt="css-logo" 
-                                            class="tech-used-logo">
-                                        <img src="./images/javascript.png" 
-                                            alt="javascript-logo"
-                                            class="tech-used-logo">
-                                    </div>
-                                </div> 
-                            </span>
-
-                        </div>
-
-                        <div class="project-name">
-                            <h3>Entertainment Web App</h3>
-                        </div>                        
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-display">
-
-                            <img src="./images/memory-game.png" 
-                                alt="memory-game"                           
-                                class="project-img">
-
-                            <span>
-                                <div class="tech-used-container">    
-                                    <div class="tech-used">
-                                        <img src="./images/html5.png" 
-                                            alt="html5-logo" 
-                                            class="tech-used-logo">
-                                        <img src="./images/css.png" 
-                                            alt="css-logo" 
-                                            class="tech-used-logo">
-                                        <img src="./images/javascript.png" 
-                                            alt="javascript-logo"
-                                            class="tech-used-logo">                                    
-                                    </div>
-                                </div>  
-                            </span>
-
-                        </div>
-
-                        <div class="project-name">
-                            <h3>Memory Game</h3>
-                        </div>
-                    </article>
-
-                </article>
-            </section>
-        </main>
-
-        <footer id="contact"> 
-            <div class="social-contact-container">    
-    <!---------------------- SOCIAL MEDIA ---------------------->
-                <div class="social-media">   
-                    <p>Social Media</p>
-                    <div class="social-media-container">
-
-                        <a href="www.facebook.com">
-                            <i class="fa-brands fa-facebook-f" 
-                                alt="Facebook"
-                                target="_blank">
-                            </i>
-                        </a>
-
-                        <a href="www.twitter.com">
-                            <i class="fa-brands fa-twitter" 
-                                alt="twitter"
-                                target="_blank">
-                            </i>
-                        </a>
-
-                        <a href="www.linkedin.com">
-                            <i class="fa-brands fa-linkedin-in" 
-                                alt="LinkedIn"
-                                target="_blank">                
-                            </i>
-                        </a>
-
-                        <a href="www.discord.com">
-                            <i class="fa-brands fa-discord" 
-                                alt="Discord"
-                                target="_blank">
-                            </i>
-                        </a>
-                    </div>
-                </div>
-        <!---------------------- CONTACT INFO ---------------------->
-                <div class="contact-info">    
-                    <p>Contact Info</p>
-
-                    <div class="contact-info-container">
-                        <ul>
-                            <li class="contact">
-                                <a href="https://goo.gl/maps/CUYP9X2kz1Wnm3Jo9" 
-                                    target="_blank">
-                                    <i class="fa-solid fa-location-dot" 
-                                        style="margin-right: 20px;">
-                                    </i>Bulakan, Bulacan, Philipines 3017
-                                </a>
-                            </li>
-                            <li class="contact">
-                                <a href="tel: +63 912-345-678" 
-                                    target="_blank">
-                                    <i class="fa-solid fa-phone" 
-                                        style="margin-right: 20px;">
-                                    </i>0912-345-678
-                                </a>
-                            </li>
-                            <li class="contact">
-                                <a href="mailto:johnernellealbaw@gmail.com">
-                                    <i class="fa-regular fa-envelope" 
-                                        style="margin-right: 20px;" >
-                                    </i>johnernellealbaw@gmail.com            
-                                </a>
-                            </li>
-                        </ul>                        
-                    </div>
-
-                </div>
+              </div>
             </div>
-        <!---------------------- CONTACT ME ---------------------->
-               
-            <div class="send-message">
-                <p>Send me message</p>    
-                <form action="mailto:johnernellealbaw@gmail.com">
-                    <div class="contact-me-container">    
-                        <div class="form-floating-name">
-                            <label for="#name">Name*</label>
-                            <input 
-                                type="text"
-                                class="form-control" 
-                                id="name" 
-                                placeholder="Enter Your Name" 
-                                required
-                            />
-                        </div>
-
-                        <div class="form-floating-email">
-                            <label for="#email">Email*</label>
-                            <input 
-                                type="email"
-                                class="form-control"  
-                                id="email" 
-                                placeholder="Enter Your Email" 
-                                required
-                            />
-                        </div>
-
-                        <div class="area-floating-message">
-                            <label for="floating-text-area">Message*</label>
-                            <textarea
-                                class="form-control-msg"
-                                id="floating-text-area" 
-                                placeholder="Type Your Message Here" 
-                                required> 
-                            </textarea>
-                        </div>
-
-                        <div class="btn">
-                            <button class="send-button" type="submit">
-                                Send Message 
-                                <i class="fa-regular fa-paper-plane"></i>
-                            </button>
-                        </div>
+          </div>
+          <div id="projects" class="my-5 py-5">
+            <div class="ms-4 ms-md-5 ps-0 ps-md-3 ps-xl-4 ps-xxl-5">
+              <h1 class="text-uppercase page-title-project"><span class="stroke">My</span> Projects</h1>
+              <div class="d-flex flex-wrap-reverse flex-row gap-4 gap-lg-5 project-wrapper">
+                <div class="col-12 col-xxl-5">
+                  <div class="d-flex flex-column align-items-start mb-3">
+                    <h1 class="project-title col-12 col-md-auto me-0 me-md-5">Cuppa Joy</h1>
+                    <div class="tech-used-icons my-2">
+                      <i class="fa-brands fa-html5 fa-2xl me-2" style="color: #85808d;">
+                        <span class="icon-name">HTML</span></i>
+                      <i class="fa-brands fa-css3-alt fa-2xl me-2" style="color: #85808d;">
+                        <span class="icon-name">CSS</span></i>
+                      <i class="fa-brands fa-bootstrap fa-2xl me-2" style="color: #85808d;">
+                        <span class="icon-name">Bootstrap</span></i>
                     </div>
-                
-                </form>
-            </div>  
-        </footer>
+                  </div>
+                  <p class="text-gray project-info-text mb-5">
+                    This is my first project I build while in the bootcamp. 
+                    A website for a dummy milktea cafe showcasing information 
+                    about the business, milktea products, services, 
+                    and reviews from the customers. 
+                  </p>
+                  <div class="project-link-buttons">
+                    <a href="https://cuppa-joy-milktea.vercel.app" 
+                      target="_blank" 
+                      class="fw-bold">
+                      Live Demo 
+                      <i class="fa-solid fa-angle-right ms-1"></i>
+                    </a>
+                    <a href="https://github.com/ErnelleAlba/Cuppa-Joy-Milktea" 
+                      target="_blank" 
+                      class="fw-bold">
+                      Github
+                      <i class="fa-solid fa-angle-right ms-1"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-12 col-xxl-5">
+                  <img src="/images/cuppa-joy-screenshot.png" 
+                    alt="CuppaJoy-Screenshot" 
+                    class="project-img">
+                </div>
+              </div>
+              <div class="d-flex flex-wrap-reverse flex-row gap-4 gap-lg-5 project-wrapper">
+                <div class="col-12 col-xxl-5">
+                  <div class="d-flex flex-column align-items-start mb-3">
+                    <h1 class="project-title col-12 col-md-auto me-0 me-md-5">AnimeConnect</h1>
+                    <div class="tech-used-icons my-2">
+                      <i class="fa-brands fa-html5 fa-2xl me-2" style="color: #85808d;">
+                        <span class="icon-name">HTML</span></i>
+                      <i class="fa-brands fa-css3-alt fa-2xl me-2" style="color: #85808d;">
+                        <span class="icon-name">CSS</span></i>
+                      <i class="fa-brands fa-bootstrap fa-2xl me-2" style="color: #85808d;">
+                        <span class="icon-name">Bootstrap</span></i>
+                      <i class="fa-brands fa-square-js fa-2xl me-2" style="color: #85808d;">
+                        <span class="icon-name">Javascript</span></i>
+                    </div>
+                  </div>
+                  <p class="text-gray project-info-text mb-5">
+                    For this project me and my groupmate used REST API 
+                    (<span><a href="https://jikan.moe/" target="_blank" class="text-light">Jikan</a></span>)
+                    to create a website where you can find the latest trending and your favorite animes.
+                  </p>
+                  <div class="project-link-buttons">
+                    <a href="https://anime-connect.vercel.app/" 
+                      target="_blank" 
+                      class="fw-bold">
+                      Live Demo 
+                      <i class="fa-solid fa-angle-right ms-1"></i>
+                    </a>
+                    <a href="https://github.com/ErnelleAlba/Anime-Connect" 
+                      target="_blank" 
+                      class="fw-bold">
+                      Github
+                      <i class="fa-solid fa-angle-right ms-1"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-12 col-xxl-5">
+                  <img src="/images/anime-conncet-screenshot.png" 
+                    alt="AnimeConnect-Screenshot" 
+                    class="project-img">
+                </div>
+              </div>
+              <div class="d-flex flex-wrap-reverse flex-row gap-4 gap-lg-5">
+                <div class="col-12 col-xxl-5">
+                  <div class="d-flex flex-column align-items-start mb-3">
+                    <h1 class="project-title col-12 col-md-auto me-0 me-md-5">ConcertCraft</h1>
+                    <div class="tech-used-icons my-2">
+                      <i class="fa-brands fa-css3-alt fa-2xl me-2" style="color: #85808d;">
+                        <span class="icon-name">CSS</span></i>
+                      <i class="fa-brands fa-bootstrap fa-2xl me-2" style="color: #85808d;">
+                        <span class="icon-name">Bootstrap</span></i>
+                      <i class="fa-brands fa-react fa-2xl me-2" style="color: #85808d;">
+                        <span class="icon-name">React JS</span></i>
+                      <i class="fa-brands fa-laravel fa-2xl me-2" style="color: #85808d;">
+                        <span class="icon-name">Laravel</span></i>
+                      <i class="fa-brands fa-php fa-2xl me-2" style="color: #85808d;">
+                        <span class="icon-name">PHP</span></i>
+                    </div>
+                  </div>
+                  <p class="text-gray project-info-text mb-5">
+                    This is a capstone project, me and my groupmate build for the bootcamp. 
+                    A concert ticket ordering app where you can browse local concerts as a guest,
+                    buy tickets as a registered user, and CRUD functionality for admin user.
+                  </p>
+                  <div class="project-link-buttons">
+                    <a href="https://concert-craft.vercel.app/" 
+                      target="_blank" 
+                      class="fw-bold">
+                      Live Demo 
+                      <i class="fa-solid fa-angle-right ms-1"></i>
+                    </a>
+                    <a href="https://github.com/ErnelleAlba/Concert_Craft" 
+                      target="_blank" 
+                      class="fw-bold">
+                      Github
+                      <i class="fa-solid fa-angle-right ms-1"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-12 col-xxl-5">
+                  <img src="/images/concert-craft-home.png" 
+                    alt="ConcertCraft-Screenshot" 
+                    class="project-img">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="contact-info" class="pt-5">
+            <div class="ms-4 ms-md-5 py-5 ps-0 ps-md-3 ps-xl-4 ps-xxl-5">
+              <h1 class="text-uppercase page-title-contact">Contact <span class="stroke">Me</span></h1>
+              <div class="d-flex flex-wrap gap-5">
+                <div class="col-12 col-lg-6 col-xl-5 pb-3 pb-md-5 px-o px-xxl-5">
+                  <form action="https://formsubmit.co/0ca3b7af21b87805e021eb49ae991057" 
+                    method="post" 
+                    autocomplete="off">
+                    <label for="name" class="form-label">Name:</label>
+                    <input type="text" name="name" id="name" class="form-control" required>
+                    <label for="email" class="form-label mt-4">Email:</label>
+                    <input type="email" name="email" id="email" class="form-control">
+                    <label for="comment" class="form-label mt-4">Comment:</label>
+                    <textarea name="comment" id="comment" rows="5" class="form-control" required></textarea>
+                    <input type="hidden" name="_template" value="box">
+                    <div class="mt-4 d-flex">
+                      <button type="submit" class="form-button btn fw-bold">Send</button>
+                      <button type="reset" class="form-button btn fw-bold">Reset</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="col-12 col-lg-6 col-xl-5 pb-3 pb-md-5 ps-0 ps-lg-5">
+                  <ul class="list-unstyled row gap-3 gap-md-4 contact-info">
+                    <li>
+                      <a href="https://goo.gl/maps/CUYP9X2kz1Wnm3Jo9" 
+                        target="_blank"
+                        class="text-decoration-none text-light">
+                        <i class="fa-solid fa-location-dot me-3"></i>
+                        <span>Bulakan, Bulacan, Philipines 3017</span>
+                      </a>
+                    </li>
+                    <li class="text-light">
+                        <i class="fa-solid fa-phone me-3" ></i>
+                        <span>(+63)925-709-5363</span>  
+                    </li>
+                    <li class="text-light">
+                      <i class="fa-regular fa-envelope me-3"></i> 
+                      <span>johnernellealbaw@gmail.com</span>           
+                    </li>
+                    <li class="">
+                      <a href="https://github.com/ErnelleAlba" 
+                        target="_blank" 
+                        class="text-light text-decoration-none">
+                        <i class="fa-brands fa-github me-3"></i> 
+                        <span>github.com/ErnelleAlba</span>  
+                      </a>
+                    </li>
+                    <li class="text-light">
+                      <a href="https://www.linkedin.com/in/john-ernelle-alba/" 
+                        target="_blank" 
+                        class="text-light text-decoration-none">
+                        <i class="fa-brands fa-linkedin-in me-3"></i> 
+                        <span>linkedin.com/john-ernelle-alba</span> 
+                      </a>
+                    </li>
+                  </ul>                        
+                </div>
+              </div>
+            </div>
+          </div>                
+        </div>
+      </div>
+    </div>
+  </div>
 
-    </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</body>
 </html>
