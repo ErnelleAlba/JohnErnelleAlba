@@ -10,10 +10,6 @@
 body {
   /* The image used */
   background-image: url(/images/background-img.jpg);
-
-  /* Set a specific height */
-
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -119,13 +115,13 @@ body {
 .scroll-text {
   position: fixed;
   transform: rotate(-90deg);
-  bottom: 18%;
+  bottom: 25%;
   color: #85808d;
-  letter-spacing: 3px;
+  letter-spacing: 5px;
 }
 
 .scroll-text > .line-bar {
-  width: 3rem;
+  width: 5rem;
   height: 2px;
   background-color: #dd00ff;
 }
@@ -152,7 +148,7 @@ body {
 
 .page-title-skill,
 .page-title-project,
-.page-title-contact {
+.page-title-message {
   font-size: 100px;
   font-weight: 700;
   letter-spacing: 5px;
@@ -175,7 +171,7 @@ body {
   background-color: #dd00ff;
 }
 
-.page-title-contact::after {
+.page-title-message::after {
   content: "";
   display: block;
   width: 44.5rem;
@@ -235,6 +231,7 @@ body {
 
 .project-link-buttons {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .project-link-buttons > a,
@@ -244,7 +241,7 @@ body {
   box-sizing: border-box;
   background-color: #dd00ff !important;
   border-radius: 45px;
-  margin-right: 50px;
+  margin-right: 30px;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -264,12 +261,12 @@ body {
   width: 100%;
 }
 
-.contact-info {
+.message-info {
   font-weight: 400;
   font-size: 20px;
 }
 
-.contact-info > li > a:hover {
+.message-info > li > a:hover {
   text-decoration: underline !important;
 }
 
@@ -280,18 +277,18 @@ body {
     font-size: 60px;
   }
 
-  .page-title-contact {
+  .page-title-message {
     font-size: 60px;
   }
 
   .page-title-skill::after,
   .page-title-project::after,
-  .page-title-contact::after {
+  .page-title-message::after {
     width: 100%;
   }
 }
 
-@media (max-width: 830px) {
+@media (max-width: 780px) {
   .list-group-item {
     padding: 5px 0 !important;
   }
@@ -302,36 +299,39 @@ body {
 
   .about-me-text,
   .project-info-text {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 1.8rem;
   }
 
   .download-cv {
-    margin-top: 30px;
+    margin-top: 0px;
     padding: 10px 20px;
     font-size: 15px;
   }
+
   .scroll-text {
-    bottom: 23%;
+    bottom: 25%;
   }
+
   .scroll-text > h6 {
-    font-size: 12px;
+    font-size: 16px;
+  }
+
+  .skill-icon > h6 {
+    font-size: 20px;
   }
 
   .page-title-skill,
   .page-title-project,
+  .page-title-message,
   .myName {
     font-size: 50px;
   }
 
-  .page-title-contact {
-    font-size: 45px;
-  }
-
   .page-title-skill,
   .page-title-project,
-  .page-title-contact {
+  .page-title-message {
     margin-bottom: 50px;
   }
 
@@ -341,18 +341,145 @@ body {
   }
 
   .project-wrapper {
-    margin-bottom: 150px;
+    margin-bottom: 120px;
+  }
+
+
+  .project-link-buttons > a {
+    padding: 4px 15px;
+    letter-spacing: 1.5px;
+    margin-right: 20px;
+    font-size: 16px;
+  }
+
+  .message-info,
+  .form-label {
+    font-weight: 400;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-me-text,
+  .project-info-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.8rem;
+  }
+
+  .download-cv {
+    margin-top: 0px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .scroll-text {
+    bottom: 25%;
+  }
+
+  .scroll-text > h6 {
+    font-size: 14px;
+  }
+
+  .skill-icon {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .skill-icon > h6 {
+    font-size: 16px;
+  }
+
+  .page-title-skill,
+  .page-title-project,
+  .page-title-message,
+  .myName {
+    font-size: 50px;
+  }
+
+  .page-title-skill,
+  .page-title-project,
+  .page-title-message {
+    margin-bottom: 40px;
+  }
+
+  .tech-used-icons {
+    font-size: 16px;
+    margin-top: 0.8rem;
+  }
+
+  .project-wrapper {
+    margin-bottom: 130px;
   }
 
   .project-link-buttons > a {
     padding: 4px 15px;
     letter-spacing: 1.5px;
     margin-right: 20px;
+    font-size: 16px;
+  }
+
+  .api-link-button {
+    margin-top: 20px;
+  }
+
+  .message-info,
+  .form-label {
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .form-button {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 409px) {
+  .about-me {
+    margin-left: 15px;
+  }
+
+  .skill-icon {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+
+  .skill-icon> h6 {
     font-size: 14px;
   }
 
-  .contact-info {
+  .about-me-text,
+  .project-info-text {
+    font-size: 14px;
     font-weight: 400;
+    line-height: 1.6rem;
+  }
+
+  .project-link-buttons > a {
+    padding: 4px 12px;
+    letter-spacing: 1.5px;
+    margin-right: 20px;
+    font-size: 14px;
+  }
+
+  .message-info,
+  .form-label {
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .form-button {
     font-size: 16px;
+  }
+
+  .myName {
+    font-size: 35px;
+  }
+
+  .page-title-skill,
+  .page-title-project,
+  .page-title-message {
+    font-size: 30px;
+    margin-bottom: 40px;
   }
 }
