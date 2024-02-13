@@ -7,6 +7,10 @@
   font-family: "Poppins";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   /* The image used */
   background-image: url(/images/background-img.jpg);
